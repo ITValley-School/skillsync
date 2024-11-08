@@ -1,0 +1,34 @@
+{
+  "login-user.ejs": {
+    "layoutPage": "main",
+    "description": ""
+  },
+  "add-user.ejs": {
+    "layoutPage": "main",
+    "description": ""
+  },
+  "login-novo.ejs": {
+    "layoutPage": "main",
+    "description": ""
+  },
+  "redefinir-senha-antiga.ejs": {
+    "layoutPage": "main",
+    "description": ""
+  },
+  "two-steps-antigo.ejs": {
+    "layoutPage": "main",
+    "description": ""
+  },
+  "redefinir-senha.ejs": {
+    "layoutPage": "main",
+    "description": ""
+  },
+  "esqueceu-a-senha.ejs": {
+    "layoutPage": "main",
+    "description": ""
+  },
+  "two-steps.ejs": {
+    "layoutPage": "main",
+    "description": ""
+  }
+}

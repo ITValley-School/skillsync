@@ -1,0 +1,100 @@
+<!-- Wappler include head-page="layouts/main" fontawesome_5="cdn" bootstrap5="local" is="dmx-app" id="redefinirsenha" appConnect="local" -->
+
+<!-- Wappler include head-page="layouts/main" fontawesome_5="cdn" bootstrap5="local" is="dmx-app" id="resetpassword" appConnect="local" -->
+<meta name="ac:route" content="/usuarios/redefinir-senha">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Sync - Redefinir Senha</title>
+    <!-- Link do CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilos CSS embutidos */
+
+        /* Fundo personalizado para a seção de redefinição de senha */
+        .bg-light-blue {
+            background-color: #e0f1ff;
+        }
+
+        /* Estilo para o título */
+        .text-primary {
+            color: #0099ff;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        a {
+            color: #0099ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Ajustes gerais para ocupar a tela toda */
+        .container-fluid {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .row {
+            width: 85%;
+            /* Ajuste de largura da row */
+            max-width: 1000px;
+            /* Limite máximo para a largura total */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            /* Sombra para efeito visual */
+            border-radius: 8px;
+        }
+
+        .img-fluid {
+            max-width: 150px;
+            /* Reduz a largura da logo */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid d-flex align-items-center justify-content-center">
+        <div class="row">
+
+            <!-- Seção do Logo -->
+            <div class="col-md-4 d-none d-md-flex align-items-center justify-content-center bg-white">
+                <img src="/assets/logo/skill-sync.png" alt="SkillSync Logo" class="img-fluid">
+            </div>
+
+            <!-- Seção de Redefinição de Senha -->
+            <div class="col-md-8 bg-light-blue p-5">
+                <h1 class="text-center mb-3">Redefina sua senha</h1>
+                <p class="text-center text-muted mb-4">Informe o e-mail para o qual você deseja redefinir sua senha:</p>
+
+                <!-- Formulário de Redefinição de Senha -->
+                <form action="reset_password_action" method="POST">
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                </form>
+
+                <!-- Link para voltar ao login -->
+                <div class="text-center mt-4">
+                    <a href="login.html" class="d-block">Voltar para o login</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- JavaScript do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>

@@ -1,0 +1,22 @@
+{
+  "enviar-curriculo.ejs": {
+    "layoutPage": "main",
+    "description": ""
+  },
+  "home.ejs": {
+    "layoutPage": "page-horizontal",
+    "description": ""
+  },
+  "home-nova.ejs": {
+    "layoutPage": "interface-principal",
+    "description": ""
+  },
+  "sync-cv.ejs": {
+    "layoutPage": "page-horizontal",
+    "description": ""
+  },
+  "vagas-consultadas.ejs": {
+    "layoutPage": "page-horizontal",
+    "description": ""
+  }
+}

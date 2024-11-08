@@ -1,0 +1,55 @@
+{
+  "routes": [
+    {
+      "path": "/",
+      "page": "index",
+      "routeType": "page",
+      "layout": "main"
+    },
+    {
+      "path": "/usuarios/redefinir-senha-antiga",
+      "page": "usuarios/redefinir-senha-antiga",
+      "layout": "main"
+    },
+    {
+      "path": "/usuarios/two-steps-antigo",
+      "page": "usuarios/two-steps-antigo",
+      "layout": "main"
+    },
+    {
+      "path": "/skillsync/home",
+      "page": "skillsync/home",
+      "layout": "page-horizontal"
+    },
+    {
+      "path": "/skillsync/sync-cv",
+      "page": "skillsync/sync-cv",
+      "layout": "page-horizontal"
+    },
+    {
+      "path": "/skillsync/vagas-consultadas",
+      "page": "skillsync/vagas-consultadas",
+      "layout": "page-horizontal"
+    },
+    {
+      "path": "/usuarios/redefinir-senha",
+      "page": "usuarios/redefinir-senha",
+      "layout": "main"
+    },
+    {
+      "path": "/usuarios/login-user",
+      "page": "usuarios/login-user",
+      "layout": "main"
+    },
+    {
+      "path": "/usuarios/esqueceu-a-senha",
+      "page": "usuarios/esqueceu-a-senha",
+      "layout": "main"
+    },
+    {
+      "path": "/usuarios/two-steps",
+      "page": "usuarios/two-steps",
+      "layout": "main"
+    }
+  ]
+}

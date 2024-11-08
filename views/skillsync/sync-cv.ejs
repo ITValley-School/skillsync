@@ -1,0 +1,90 @@
+<!-- Wappler include head-page="layouts/page-horizontal" fontawesome_5="cdn" bootstrap5="local" is="dmx-app" id="synccv" appConnect="local" components="{dmxPreloader:{}}" -->
+
+<!-- Wappler include head-page="layouts/telaprincipal" fontawesome_5="cdn" bootstrap5="custom" is="dmx-app" id="synccv" appConnect="local" components="{dmxPreloader:{}}" -->
+<meta name="ac:route" content="/skillsync/sync-cv">
+<dmx-preloader id="preloader1" spinner="circle"></dmx-preloader>
+
+<head>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&ampdisplay=swap" rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="/assets/vendor/fonts/fontawesome.css" />
+    <link rel="stylesheet" href="/assets/vendor/fonts/tabler-icons.css" />
+    <link rel="stylesheet" href="/assets/vendor/fonts/flag-icons.css" />
+
+    <!-- Core CSS -->
+
+    <link rel="stylesheet" href="/assets/vendor/css/rtl/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="/assets/vendor/css/rtl/theme-default.css" class="template-customizer-theme-css" />
+
+    <link rel="stylesheet" href="/assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="/assets/vendor/libs/node-waves/node-waves.css" />
+
+    <link rel="stylesheet" href="/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="/assets/vendor/libs/typeahead-js/typeahead.css" />
+    <link rel="stylesheet" href="/assets/vendor/libs/bootstrap-maxlength/bootstrap-maxlength.css" />
+
+    <!-- Page CSS -->
+
+    <link rel="stylesheet" href="/assets/vendor/css/pages/app-chat.css" />
+
+    <!-- Helpers -->
+    <script src="/assets/vendor/js/helpers.js"></script>
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+
+    <!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
+    <script src="/assets/vendor/js/template-customizer.js"></script>
+
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="/assets/js/config.js"></script>
+</head>
+
+
+<div class="container mt-0">
+    <div class="row">
+        <div class="col">
+            <div class="card mt-0">
+                <div class="card-body">
+                    <h4 class="card-title mb-4">Envie seu CV</h4>
+                    <p class="card-text">Tipo de arquivo suportado: Somente <b>PDF</b></p>
+
+                    <form is="dmx-serverconnect-form" id="frmUpload" method="post" action="/api/IA-Conversacional/ocr-openai" site="ITValley International" dmx-generator="bootstrap5" dmx-form-type="horizontal">
+                        <div class="form-group mb-3 row">
+                            <label for="inp_file" class="col-sm-2 col-form-label">Arquivo</label>
+                            <div class="col-sm-10">
+                                <input type="file" class="form-control" id="inp_file" name="file" aria-describedby="inp_file_help" required="" accept=".pdf" dmxorgdomid="d212">
+                            </div>
+                        </div>
+                        <div class="form-group mb-3 row">
+                            <label for="inp_textarea" class="col-sm-2 col-form-label">Descrição da Vaga</label>
+                            <div class="col-sm-10">
+                                <textarea id="inp_textarea" name="inp_textarea" class="form-control" required="" rows="10" dmxorgdomid="d216"></textarea>
+                                <button id="btnSubmit" class="btn btn-primary mt-3" type="enviar">Enviar</button>
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+
+
+<!-- Div para exibir o texto extraído -->
+<div id="responseContainer" class="mt-4" style="color: white;" dmx-on:focus=""></div>
+
+
+
+<script src="/assets/js/itvalleyjs/sync-cv.js"></script>
